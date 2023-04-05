@@ -92,19 +92,19 @@ function renderGlutenFreeCrust() {
 function renderButtons() {
   // Iteration 3: add/remove the class "active" of each `<button class="btn">`
 
-  if(!state.pepperoni) {
+  if(state.pepperoni) {
     document.querySelector('.btn.btn-pepperoni').classList.add('active')
   } else {
     document.querySelector('.btn.btn-pepperoni').classList.remove('active') 
   }
 
-  if(!state.mushrooms) {
+  if(state.mushrooms) {
     document.querySelector('.btn.btn-mushrooms').classList.add('active')
   } else {
     document.querySelector('.btn.btn-mushrooms').classList.remove('active') 
   }
 
-  if(!state.greenPeppers) {
+  if(state.greenPeppers) {
     document.querySelector('.btn.btn-green-peppers').classList.add('active')
   } else {
     document.querySelector('.btn.btn-green-peppers').classList.remove('active') 
